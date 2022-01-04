@@ -18,6 +18,8 @@ Opencast periodically scans the specified location for new files.
 
 Each configured inbox directory may result in digest for a separate organization or with a different default workflow.
 
+The default folder for scanning is found at /srv/opencast/inbox.  Any file or media package placed in this folder will be ingested.  If you want to ingest to  specific series, folders placed in the inbox folder that are named by the UID of the series will automatically add the ingested media to that series.
+
 The inbox can process media files directly, or can work on zipped media packages containing multiple files and
 additional metadata.
 
